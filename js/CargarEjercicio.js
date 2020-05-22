@@ -1,0 +1,13 @@
+$(document).ready(function()
+{
+    $("#ejerciciouno").on("mouseover",function(event)
+    {
+        event.preventDefault();
+        $("#contenedorejercicio").load("Ejerciciouno.html")
+    });
+    $("#ejerciciodos").on("mouseover",function(event)
+    {
+        event.preventDefault();
+        $("#contenedorejercicio").load("Ejerciciodos.html")
+    })
+})

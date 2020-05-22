@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+    <main>
+        <a-scene>
+            <a-assets>
+                <img id="sanjuan" src="img/sanjuan.jpg">
+                <img id="puerto" src="img/puerto.jpg" >
+                <img id="bogota" src="img/bogota.jpg" >
+            </a-assets>
+            <a-image src="#sanjuan" position="-1.5 1.8 -3" onclick="show('sanjuan')"></a-image>
+            <a-image src="#puerto" position="0 1.8 -3" onclick="show('puerto')"></a-image>
+            <a-image src="#bogota" position="1.5 1.8 -3" onclick="show('bogota')"></a-image>
+            <a-sky src="#bogota" id="sky" ></a-sky>
+            <a-camera>
+                <a-cursor color="blue"></a-cursor>
+            </a-camera>
+        </a-scene>
+    </main>
+</body>
+</html>
