@@ -34,9 +34,10 @@
               <a-image src="#guatape" position="1.5 1.8 -3" onclick="show('guatape')"></a-image>
               <a-image src="#bogota" position="3 1.8 -3" onclick="show('bogota')"></a-image>
                 <a-text font="mozillavr" color="white" value="LAS ESTACIONES" position="-0.4 2.5 -2"></a-text>
+                <a-text id="pepinotext" font="mozillavr" color="white" value="" position="-0.4 0 -2"></a-text>
             <a-asset-item id="pickrick" src="img/pickrick.glb">
             </a-asset-item>
-              <a-entity gltf-model="#pickrick" scale="0.01 0.01 0.01" position="-1 0 -3" modify-materials></a-entity>        
+              <a-entity gltf-model="#pickrick" scale="0.01 0.01 0.01" onclick="showtext('pepinotext','im pickle rick')" position="-1 0 -3" modify-materials></a-entity>        
             <a-sky src="#bogota" id="sky" ></a-sky>
             <a-camera>
                 <a-cursor color="blue"></a-cursor>

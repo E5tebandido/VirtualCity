@@ -24,22 +24,17 @@
         <a-scene>
             <a-entity text="value: Hello World;"></a-entity>
             <a-assets>
-                <img id="cobeñas" src="img/cobeñas2.jpg">
-                <img id="manizales" src="img/manizales2.jpg" >
-                <img id="bogota" src="img/bogota2.jpg" >
-                <img id="guatape" src="img/guatape2.jpg" >
+                <img id="preposiciones" src="img/proposiciones.jpg">
+                <audio id="front" src="img/infront.ogg" preload="auto" volume=2></audio>
             </a-assets>
-              <a-image src="#cobeñas" position="-1.5 1.8 -3" onclick="show('cobeñas')" ></a-image>
-              <a-image src="#manizales" position="0 1.8 -3" onclick="show('manizales')"></a-image>
-              <a-image src="#guatape" position="1.5 1.8 -3" onclick="show('guatape')"></a-image>
-              <a-image src="#bogota" position="3 1.8 -3" onclick="show('bogota')"></a-image>
-                <a-text font="mozillavr" color="yellow" value="LAS PREPOSICIONES" position="-0.5 2.5 -2"></a-text>
-            <a-asset-item id="pickrick" src="img/pickrick.glb">
-            </a-asset-item>
-              <a-entity gltf-model="#pickrick" scale="0.01 0.01 0.01" position="-1 0 -3" modify-materials></a-entity>        
-            <a-sky src="#bogota" id="sky" ></a-sky>
+                <a-text font="mozillavr" color="yellow" value="LAS PREPOSICIONES" rotation="0 90 0" position="-3 2.5 1.1"></a-text>
+                <a-text id="infrontof" font="mozillavr" color="purple" value="" rotation="0 90 0" position="-1.8 0.3 1.1"></a-text>
+                <a-text id="infrontof" font="mozillavr" color="purple" value="" rotation="0 90 0" position="-1.8 0.3 1.1"></a-text>
+                <a-entity scale="0.6 1.3 0.6" position="-2 1.2 0" geometry="primitive: box"  onclick="showtext('infrontof','in front of -> En frente de')"  material="opacity: 0" sound="src: #front; on: click"></a-entity>
+                <a-entity scale="0.6 1.3 0.6" position="-2 1.2 0" geometry="primitive: box"  onclick="showtext('infrontof','in front of -> En frente de')"  material="opacity: 0" sound="src: #front; on: click"></a-entity>
+            <a-sky src="#preposiciones" id="sky" ></a-sky>
             <a-camera>
-                <a-cursor color="blue"></a-cursor>
+                <a-cursor color="red"></a-cursor>
             </a-camera>
         </a-scene>
     </main>
