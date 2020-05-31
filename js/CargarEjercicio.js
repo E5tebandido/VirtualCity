@@ -1,13 +1,22 @@
 $(document).ready(function()
 {
-    $("#ejerciciouno").on("mouseover",function(event)
+    $("#ejerciciouno").on("click",function(event)
     {
-        event.preventDefault();
-        $("#contenedorejercicio").load("Ejerciciouno.html")
-    });
-    $("#ejerciciodos").on("mouseover",function(event)
-    {
-        event.preventDefault();
-        $("#contenedorejercicio").load("Ejerciciodos.html")
+        cargarTematica("contenedorejercicio","animalesmarinos.html")
     })
+    $("#ejerciciodos").on("click",function(event)
+    {
+        cargarTematica("contenedorejercicio","estaciones.html")
+    })
+    $("#ejerciciotres").on("click",function(event)
+    {
+        cargarTematica("contenedorejercicio","cuerpo.html")
+    })
+    $("#ejerciciocuatro").on("click",function(event)
+    {
+        cargarTematica("contenedorejercicio","preposiciones.html")
+    })
+    
+    
+    
 })

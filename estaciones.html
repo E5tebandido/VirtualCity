@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+    <script>
+        AFRAME.registerComponent('modify-materials', {
+          init: function () {
+            // Wait for model to load.
+            this.el.addEventListener('model-loaded', () => {
+              // Grab the mesh / scene.
+              const obj = this.el.getObject3D('mesh');
+              // Go over the submeshes and modify materials we want.
+              obj.traverse(node => {
+                if (node.name.indexOf('ship') !== -1) {
+                  node.material.color.set('red');
+                }
+              });
+            });
+          }
+        });
+    </script>
+    <main>
+        <a-scene>
+            <a-entity text="value: Hello World;"></a-entity>
+            <a-assets>
+                <img id="cobeñas" src="img/cobeñas2.jpg">
+                <img id="manizales" src="img/manizales2.jpg" >
+                <img id="bogota" src="img/bogota2.jpg" >
+                <img id="guatape" src="img/guatape2.jpg" >
+            </a-assets>
+              <a-image src="#cobeñas" position="-1.5 1.8 -3" onclick="show('cobeñas')" ></a-image>
+              <a-image src="#manizales" position="0 1.8 -3" onclick="show('manizales')"></a-image>
+              <a-image src="#guatape" position="1.5 1.8 -3" onclick="show('guatape')"></a-image>
+              <a-image src="#bogota" position="3 1.8 -3" onclick="show('bogota')"></a-image>
+                <a-text font="mozillavr" color="white" value="LAS ESTACIONES" position="-0.4 2.5 -2"></a-text>
+            <a-asset-item id="pickrick" src="img/pickrick.glb">
+            </a-asset-item>
+              <a-entity gltf-model="#pickrick" scale="0.01 0.01 0.01" position="-1 0 -3" modify-materials></a-entity>        
+            <a-sky src="#bogota" id="sky" ></a-sky>
+            <a-camera>
+                <a-cursor color="blue"></a-cursor>
+            </a-camera>
+        </a-scene>
+    </main>
+</body>
+</html>
