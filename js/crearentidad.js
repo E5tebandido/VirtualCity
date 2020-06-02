@@ -1,28 +1,3 @@
-
-function show(id) 
-  {
-    try
-    {
-      document.getElementById('sky').setAttribute('src', '#' + id);
-    }catch(error)
-    {
-      console.log(error)
-    }
-  }
-
-function showtext(id,text)
-{
-  try
-  {
-    document.getElementById(id).setAttribute('value',text);
-  }catch(error)
-  {
-    console.log(error)
-  }
-}
-
-
-
 function crearFigura(id,tipofigura,color,escala,posicion)
 {
   var oldentity = document.createElement('a-entity');
@@ -48,11 +23,3 @@ function crearFigura(id,tipofigura,color,escala,posicion)
     console.log(error)
   }
 }
-
-function sound(url)
-{
-  
-}
-
-
-

@@ -1,5 +1,11 @@
 
 function cargarTematica(contenedor,script)
 {
-        $("#"+contenedor).load(script)
+        setTimeout(function()
+        {
+                $("#"+contenedor).load(script)
+        }, 
+        3000
+        ) 
+       
 }
