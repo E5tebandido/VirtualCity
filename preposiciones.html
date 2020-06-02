@@ -8,7 +8,7 @@
             <a-entity text="value: Hello World;"></a-entity>
             <a-assets>
                 <img id="preposiciones" src="img/proposiciones.jpg">
-                <audio id="front" src="img/infront.ogg" preload="auto" volume=2></audio>
+                <audio id="front" src="img/song.mp3" preload="auto" volume=3></audio>
             </a-assets>
                 <a-text font="mozillavr" color="yellow" value="THE PREPOSITIONS" rotation="0 90 0" position="-3 3 1.1"></a-text>
                 <a-text font="mozillavr" color="yellow" value="!!CLICK THE OBJECTS!!" rotation="0 90 0" position="-3 2.5 1.2"></a-text>
@@ -17,7 +17,9 @@
                 <a-text font="mozillavr" color="purple" value="IN" rotation="0 180 0" position="0.1 0.7 4.5"></a-text>
                 <a-text font="mozillavr" color="purple" value="UNDER" rotation="0 0 0" position="0 1 -3"></a-text>
                 <a-text font="mozillavr" color="purple" value="BEHIND" rotation="0 -90 0" position="1.7 1.3 -0.5"></a-text>
+                <a-text font="mozillavr" color="yellow" value="Back" position="-2.7 2.5 -1.5" rotation="0 30 0"></a-text>
                 <a-entity scale="0.6 1.3 0.6" position="-2 1.2 0" geometry="primitive: box" onclick="crearFigura('infront','cylinder','yellow','0.3 0.3 0.3','-1.2 0.3 0')"  material="opacity: 0" sound="src: #front; on: click"></a-entity>
+                <a-entity scale="0.3 0.3 0.3" position="-3 2.5 -2" geometry="primitive: sphere" onclick="location.reload()"   material="color:purple"></a-entity>
                 <a-asset-item id="pickrick" src="img/pickrick.glb">
                 </a-asset-item>
                 <a-asset-item id="boxin" src="img/boxin.glb">

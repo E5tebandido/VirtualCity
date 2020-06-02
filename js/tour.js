@@ -49,5 +49,10 @@ function crearFigura(id,tipofigura,color,escala,posicion)
   }
 }
 
+function sound(url)
+{
+  
+}
+
 
 
