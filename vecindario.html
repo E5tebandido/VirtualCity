@@ -1,0 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+    <script>
+        AFRAME.registerComponent('modify-materials', {
+          init: function () {
+            // Wait for model to load.
+            this.el.addEventListener('model-loaded', () => {
+              // Grab the mesh / scene.
+              const obj = this.el.getObject3D('mesh');
+              // Go over the submeshes and modify materials we want.
+              obj.traverse(node => {
+                if (node.name.indexOf('ship') !== -1) {
+                  node.material.color.set('red');
+                }
+              });
+            });
+          }
+        });
+    </script>
+    <main>
+        <a-scene>
+            <a-entity text="value: Hello World;"></a-entity>
+            <a-assets>
+                <img id="market" src="img/supermarket.jpg">
+                <img id="library" src="img/library.jpg" >
+                <img id="church" src="img/church.jpg" >
+                <img id="hospital" src="img/hospital.jpg" >
+                <img id="park" src="img/park.jpg" >
+                <img id="petshop" src="img/petshop.jpg" >
+                <img id="toystore" src="img/toystore.jpg" >
+            </a-assets>
+              <a-image src="#market" position="-2 1.8 -3" onclick="show('market')" ></a-image>
+              <a-image src="#library" position="-0.5 1.8 -3" onclick="show('library')"></a-image>
+              <a-image src="#church" position="1 1.8 -3" onclick="show('church')"></a-image>
+              <a-image src="#hospital" position="2.5 1.8 -3" onclick="show('hospital')"></a-image>
+              <a-image src="#park" position="-1.2 0.5 -3" onclick="show('park')"></a-image>
+              <a-image src="#petshop" position="0.3 0.5 -3" onclick="show('petshop')"></a-image>
+              <a-image src="#toystore" position="1.8 0.5 -3" onclick="show('toystore')"></a-image>
+                <a-text font="mozillavr" color="orange" value="MY NEIGHBORHOOD" position="-0.4 2.8 -2"></a-text>
+                <a-text font="mozillavr" color="orange" value="Market" position="-2.5 2.2 -3"></a-text>
+                <a-text font="mozillavr" color="orange" value="Library" position="-1 2.2 -3"></a-text>
+                <a-text font="mozillavr" color="orange" value="Church" position="0.5 2.2 -3"></a-text>
+                <a-text font="mozillavr" color="orange" value="Hospital" position="2 2.2 -3"></a-text>
+                <a-text font="mozillavr" color="orange" value="Park" position="-1.7 0.9 -3"></a-text>
+                <a-text font="mozillavr" color="orange" value="Pet shop" position="-0.2 0.9 -3"></a-text>
+                <a-text font="mozillavr" color="orange" value="Toy store" position="1.3 0.9 -3"></a-text>
+            <a-sky src="#library" id="sky" ></a-sky>
+            <a-camera>
+                <a-cursor color="blue"></a-cursor>
+            </a-camera>
+        </a-scene>
+    </main>
+</body>
+</html>

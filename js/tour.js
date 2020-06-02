@@ -21,18 +21,29 @@ function showtext(id,text)
   }
 }
 
-function crearFigura(tipofigura,color,escala,posicion)
+
+
+function crearFigura(id,tipofigura,color,escala,posicion)
 {
+  var oldentity = document.createElement('a-entity');
   try
     {
       var scene = document.querySelector('a-scene');
-      var entity = document.createElement('a-entity');
-      entity.setAttribute('material','color', color);
-      entity.setAttribute('scale', escala);
-      entity.setAttribute('geometry', 'primitive',tipofigura);
-      entity.setAttribute('position', posicion);
-      scene.appendChild(entity);    
-  }catch(error)
+      var newentity = document.createElement('a-entity');
+      console.log(scene,newentity);
+      newentity.setAttribute('id',id);
+      newentity.setAttribute('material','color', color);
+      newentity.setAttribute('scale', escala);
+      newentity.setAttribute('geometry', 'primitive',tipofigura);
+      newentity.setAttribute('position', posicion);
+      scene.appendChild(newentity);
+      console.log(newentity.id);
+      setTimeout(function(){
+        if ($("#"+newentity.id).length > 0) {
+          $("#"+newentity.id).remove();
+        }
+      }, 5000)
+    }catch(error)
   {
     console.log(error)
   }

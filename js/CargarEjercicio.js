@@ -6,11 +6,11 @@ $(document).ready(function()
     })
     $("#ejerciciodos").on("click",function(event)
     {
-        cargarTematica("contenedorejercicio","estaciones.html")
+        cargarTematica("contenedorejercicio","vecindario.html")
     })
     $("#ejerciciotres").on("click",function(event)
     {
-        cargarTematica("contenedorejercicio","cuerpo.html")
+        cargarTematica("contenedorejercicio","")
     })
     $("#ejerciciocuatro").on("click",function(event)
     {
