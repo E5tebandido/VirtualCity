@@ -1,6 +1,5 @@
 function crearFigura(id,tipofigura,color,escala,posicion)
 {
-  var oldentity = document.createElement('a-entity');
   try
     {
       var scene = document.querySelector('a-scene');

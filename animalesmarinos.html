@@ -5,7 +5,6 @@
 <body>
     <main>
         <a-scene>
-            <a-entity text="value: Hello World;"></a-entity>
             <a-assets>
                 <img id="pacific" src="img/pacificocean.jpg">
                 <img id="artic" src="img/articocean.jpg" >
@@ -17,9 +16,17 @@
               <a-entity scale="0.3 0.3 0.3" position="-2.5 2.5 -2" geometry="primitive: sphere" onclick="location.reload()"   material="color:purple"></a-entity>
               <a-text font="mozillavr" color="blue" value="MARINE ANIMALS" position="-1.3 2.5 -2"></a-text>
               <a-text font="mozillavr" color="yellow" value="Back" position="-2.2 2.5 -1.5" rotation="0 30 0"></a-text>
+              <a-asset-item id="fish" src="img/fish1.glb">
+              </a-asset-item>
+              <a-asset-item id="dory" src="img/fish2.glb">
+              </a-asset-item>
+              <a-asset-item id="octopus" src="img/octopus.glb">
+              </a-asset-item>
+              <a-asset-item id="shark" src="img/shark.glb">
+              </a-asset-item>                                                        
             <a-sky src="#artic" id="sky" ></a-sky>
             <a-camera>
-                <a-cursor color="yellow" fuse=true fuseTimeout="800" ></a-cursor>
+                <a-cursor color="yellow" fuse=true fuseTimeout="500" ></a-cursor>
             </a-camera>
         </a-scene>
     </main>

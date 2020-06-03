@@ -1,0 +1,17 @@
+{
+    "artic":
+    [
+        {
+            "gltfmodel":"#fish",
+            "scale":"0.01 0.01 0.01",
+            "position":"-2 2 1.5",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#octopus",
+            "scale":"0.1 0.1 0.1",
+            "position":"-2 0 1.5",
+            "rotation":"0 -30 0"
+        }
+    ]
+}
