@@ -14,18 +14,22 @@ function show(skyid)
             {
               if(scene == null || newentity == null)
               {
-                scene = document.querySelector('a-scene');
                 $.getJSON("json/articdata.json",function(json)
                 {
+
+                  console.log("json");
                     let articobjects = json.artic;
                     for(i in articobjects)
                     {
+                      console.log(articobjects[i].gltfmodel);
+                      scene = document.querySelector('a-scene');
                       newentity = document.createElement('a-entity');
                       newentity.setAttribute('gltf-model',articobjects[i].gltfmodel);
-                      newentity.setAttribute('scale', articobjects[i].scale);
-                      newentity.setAttribute('position',articobjects[i].position);
-                      newentity.setAttribute('rotation', articobjects[i].position);
+                      newentity.setAttribute('scale', '0.01 0.01 0.01');
+                      newentity.setAttribute('position','-2 2 1.5');
+                      newentity.setAttribute('rotation', '0 -90 0');
                       scene.appendChild(newentity);
+                      console.log(scene.appendChild(newentity));
                     }
                 });
                 
