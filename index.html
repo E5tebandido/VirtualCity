@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJemplos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <title>Virtual City</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body id="body">
-    <div class="topnav">
-        <h1 class="logo">Virtual city</h1>
-     
-    </div>
     <div id="contenedor">
+        <nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
+            <div class="navbar-header d-flex col">
+                <a class="navbar-brand" href="#"><i class="fa fa-cube"></i>Virtual<b>City</b></a>
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse"
+                    class="navbar-toggle navbar-toggler ml-auto">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                <form class="navbar-form form-inline">
+                    <div class="input-group search-box">
+                        <input type="text" id="search" class="form-control" placeholder="Search here...">
+                        <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link"><i
+                                class="fa fa-home"></i><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-users"></i><span>Team</span></a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i
+                                class="fa fa-briefcase"></i><span>Careers</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i
+                                class="fa fa-envelope"></i><span>Messages</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i
+                                class="fa fa-bell"></i><span>Notifications</span></a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img
+                                src="./img/nino.png" class="avatar"
+                                alt="Avatar">Natalia<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-user-o"></i>Perfil</a></li>
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendario</a></li>
+                            <li><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Configuración</a></li>
+                            <li class="divider dropdown-divider"></li>
+                            <li><a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i>Cerrar
+                                    sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="..." alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+              </div>
+            </div>
+          </div>
         <p>
             <button type="button1" id="ejerciciouno" class="btn btn-primary btn-lg">Animales Marinos</button>
-            <button type="button2" id="ejerciciodos"class="btn btn-success btn-lg">Mi vecindario</button>
+            <button type="button2" id="ejerciciodos" class="btn btn-success btn-lg">Mi vecindario</button>
             <button type="button3" id="ejerciciotres" class="btn btn-warning btn-lg">Baila !</button>
             <button type="button4" id="ejerciciocuatro" class="btn btn-info btn-lg">Preposiciones</button>
         </p>
         <div id="contenedorejercicio"></div>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="js/cargapagina.js"></script>
     <script src="js/cargatematica.js"></script>
@@ -34,4 +96,5 @@
     <script src="js/crearentidad.js"></script>
     <script src="js/cambiaobjeto.js"></script>
 </body>
+
 </html>
