@@ -5,7 +5,13 @@
             "gltfmodel":"#octopus",
             "scale":"0.1 0.1 0.1",
             "position":"-2 0 1.5",
-            "rotation":"0 -30 0"
+            "rotation":"0 110 0"
+        },
+        {
+            "gltfmodel":"#octopus",
+            "scale":"0.1 0.1 0.1",
+            "position":"5 -1 5",
+            "rotation":"0 -110 0"
         },
         {
             "gltfmodel":"#shark",
@@ -24,6 +30,114 @@
             "scale":"0.1 0.1 0.1",
             "position":"5 2 5",
             "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#shark",
+            "scale":"0.1 0.1 0.1",
+            "position":"-3 2 -4",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#shark",
+            "scale":"0.3 0.3 0.3",
+            "position":"7 2 -3",
+            "rotation":"0 -30 0"
+        },
+        {
+            "gltfmodel":"#whale",
+            "scale":"0.8 0.8 0.8",
+            "position":"8 25 50",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#whale",
+            "scale":"0.8 0.8 0.8",
+            "position":"-3 18 30",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#whale",
+            "scale":"0.8 0.8 0.8",
+            "position":"0 30 -28",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#whale",
+            "scale":"2 2 2",
+            "position":"-18 4 3",
+            "rotation":"40 120 25"
+        },
+        {
+            "gltfmodel":"#whale",
+            "scale":"0.5 0.5 0.5",
+            "position":"0 9 0",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#jellyfish",
+            "scale":"0.1 0.1 0.1",
+            "position":"3 7 0",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#jellyfish",
+            "scale":"0.5 0.5 0.5",
+            "position":"-4 7 0",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#jellyfish",
+            "scale":"0.1 0.1 0.1",
+            "position":"6 1 -4",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#jellyfish",
+            "scale":"0.1 0.1 0.1",
+            "position":"13 1 7",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#fish",
+            "scale":"0.1 0.1 0.1",
+            "position":"30 11 3",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#fish",
+            "scale":"0.1 0.1 0.1",
+            "position":"40 11 3",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#fish",
+            "scale":"0.1 0.1 0.1",
+            "position":"50 11 3",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#fish",
+            "scale":"0.1 0.1 0.1",
+            "position":"40 8 3",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#seahorse",
+            "scale":"0.002 0.002 0.002",
+            "position":"6 1 6",
+            "rotation":"0 120 0"
+        },
+        {
+            "gltfmodel":"#seahorse",
+            "scale":"0.002 0.002 0.002",
+            "position":"0 1 12",
+            "rotation":"0 -90 0"
+        },
+        {
+            "gltfmodel":"#seahorse",
+            "scale":"0.002 0.002 0.002",
+            "position":"-6 1 6",
+            "rotation":"0 90 0"
         }
     ]
 }

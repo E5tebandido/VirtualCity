@@ -8,10 +8,10 @@ $(document).ready(function()
     {
         cargarTematica("contenedorejercicio","vecindario.html")
     })
-   /* $("#ejerciciotres").on("click",function(event)
+    $("#ejerciciotres").on("click",function(event)
     {
-        cargarTematica("contenedorejercicio","")
-    })*/
+        cargarTematica("contenedorejercicio","baila.html")
+    })
     $("#ejerciciocuatro").on("click",function(event)
     {
         cargarTematica("contenedorejercicio","preposiciones.html")

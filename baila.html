@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+    <main>
+        <a-scene>
+            <a-assets>
+                <img id="setdance" src="img/dance.jpg">
+                <audio id="song" src="img/song.mp3" preload="auto" volume=3></audio>
+            </a-assets>
+              <a-entity scale="0.3 0.3 0.3" position="-2.3 0.5 -3" geometry="primitive: sphere" onclick="location.reload()"   material="color:purple" sound="src: #song"></a-entity>
+                <a-text font="mozillavr" color="orange" value="!!Baila!!" position="-0.4 2.8 -2"></a-text>
+                <a-text font="mozillavr" color="yellow" value="Back" position="-2.2 0.7 -2.5" rotation="0 30 0"></a-text>
+            <a-sky src="#setdance" id="sky"></a-sky>
+            <a-camera>
+              <a-cursor color="yellow" fuse=true fuseTimeout="800" ></a-cursor>
+            </a-camera>
+        </a-scene>
+    </main>
+</body>
+</html>
