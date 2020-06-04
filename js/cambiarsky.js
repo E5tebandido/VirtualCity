@@ -21,6 +21,7 @@ function show(skyid)
         for(i in modeldata)
         {
           createModel(modeldata[i], scene);
+          createDescription(modeldata[i],scene)
         }
     });
   }
@@ -37,6 +38,17 @@ function show(skyid)
     scene.appendChild(entity);
   }
 
+  function createDescription(data, scene)
+  {
+    entity = document.createElement('a-text');
+    entity.setAttribute('class','removable');
+    entity.setAttribute('color',data.textcolor);
+    entity.setAttribute('value', data.textvalue);
+    entity.setAttribute('scale','3 3 3');
+    entity.setAttribute('position',data.position);
+    entity.setAttribute('rotation', data.rotation);
+    scene.appendChild(entity);
+  }
 
   
 

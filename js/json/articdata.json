@@ -5,139 +5,185 @@
             "gltfmodel":"#octopus",
             "scale":"0.1 0.1 0.1",
             "position":"-2 0 1.5",
-            "rotation":"0 110 0"
+            "rotation":"0 110 0",
+            "textcolor":"purple",
+            "textvalue":"octopus"
         },
         {
             "gltfmodel":"#octopus",
             "scale":"0.1 0.1 0.1",
             "position":"5 -1 5",
-            "rotation":"0 -110 0"
+            "rotation":"0 -110 0",
+            "textcolor":"purple",
+            "textvalue":"octopus"
         },
         {
             "gltfmodel":"#shark",
             "scale":"0.1 0.1 0.1",
             "position":"-3 2 7",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"shark"
         },
         {
             "gltfmodel":"#shark",
             "scale":"0.1 0.1 0.1",
             "position":"-8 2 9",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"shark"
         },
         {
             "gltfmodel":"#shark",
             "scale":"0.1 0.1 0.1",
             "position":"5 2 5",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"shark"
         },
         {
             "gltfmodel":"#shark",
             "scale":"0.1 0.1 0.1",
-            "position":"-3 2 -4",
-            "rotation":"0 90 0"
+            "position":"-10 2 -4",
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"shark"
         },
         {
             "gltfmodel":"#shark",
             "scale":"0.3 0.3 0.3",
             "position":"7 2 -3",
-            "rotation":"0 -30 0"
+            "rotation":"0 -30 0",
+            "textcolor":"purple",
+            "textvalue":"shark"
         },
         {
             "gltfmodel":"#whale",
             "scale":"0.8 0.8 0.8",
             "position":"8 25 50",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"whale"
         },
         {
             "gltfmodel":"#whale",
             "scale":"0.8 0.8 0.8",
             "position":"-3 18 30",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"whale"
         },
         {
             "gltfmodel":"#whale",
             "scale":"0.8 0.8 0.8",
             "position":"0 30 -28",
-            "rotation":"0 -90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"whale"
         },
         {
             "gltfmodel":"#whale",
-            "scale":"2 2 2",
-            "position":"-18 4 3",
-            "rotation":"40 120 25"
+            "scale":"0.4 0.4 0.4",
+            "position":"-10 4 3",
+            "rotation":"20 90 0",
+            "textcolor":"purple",
+            "textvalue":"whale"
         },
         {
             "gltfmodel":"#whale",
             "scale":"0.5 0.5 0.5",
             "position":"0 9 0",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"whale"
         },
         {
             "gltfmodel":"#jellyfish",
             "scale":"0.1 0.1 0.1",
             "position":"3 7 0",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"jellyfish"
         },
         {
             "gltfmodel":"#jellyfish",
             "scale":"0.5 0.5 0.5",
             "position":"-4 7 0",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"jellyfish"
         },
         {
             "gltfmodel":"#jellyfish",
             "scale":"0.1 0.1 0.1",
             "position":"6 1 -4",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"jellyfish"
         },
         {
             "gltfmodel":"#jellyfish",
             "scale":"0.1 0.1 0.1",
             "position":"13 1 7",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"jellyfish"
         },
         {
             "gltfmodel":"#fish",
             "scale":"0.1 0.1 0.1",
             "position":"30 11 3",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"fish"
         },
         {
             "gltfmodel":"#fish",
             "scale":"0.1 0.1 0.1",
             "position":"40 11 3",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"fish"
         },
         {
             "gltfmodel":"#fish",
             "scale":"0.1 0.1 0.1",
             "position":"50 11 3",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"fish"
         },
         {
             "gltfmodel":"#fish",
             "scale":"0.1 0.1 0.1",
-            "position":"40 8 3",
-            "rotation":"0 90 0"
+            "position":"17 3 3",
+            "rotation":"0 -70 0",
+            "textcolor":"purple",
+            "textvalue":"fish"
         },
         {
             "gltfmodel":"#seahorse",
             "scale":"0.002 0.002 0.002",
             "position":"6 1 6",
-            "rotation":"0 120 0"
+            "rotation":"0 120 0",
+            "textcolor":"purple",
+            "textvalue":"seahorse"
         },
         {
             "gltfmodel":"#seahorse",
             "scale":"0.002 0.002 0.002",
             "position":"0 1 12",
-            "rotation":"0 -90 0"
+            "rotation":"0 -90 0",
+            "textcolor":"purple",
+            "textvalue":"seahorse"
         },
         {
             "gltfmodel":"#seahorse",
             "scale":"0.002 0.002 0.002",
             "position":"-6 1 6",
-            "rotation":"0 90 0"
+            "rotation":"0 90 0",
+            "textcolor":"purple",
+            "textvalue":"seahorse"
         }
     ]
 }
