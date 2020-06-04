@@ -1,4 +1,4 @@
-function show(skyid) 
+function showMarine(skyid) 
   {
     let url;
     document.getElementById('sky').setAttribute('src', '#' + skyid);
