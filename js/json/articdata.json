@@ -1,17 +1,29 @@
 {
-    "artic":
+    "models":
     [
-        {
-            "gltfmodel":"#fish",
-            "scale":"0.01 0.01 0.01",
-            "position":"-2 2 1.5",
-            "rotation":"0 -90 0"
-        },
         {
             "gltfmodel":"#octopus",
             "scale":"0.1 0.1 0.1",
             "position":"-2 0 1.5",
             "rotation":"0 -30 0"
+        },
+        {
+            "gltfmodel":"#shark",
+            "scale":"0.1 0.1 0.1",
+            "position":"-3 2 7",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#shark",
+            "scale":"0.1 0.1 0.1",
+            "position":"-8 2 9",
+            "rotation":"0 90 0"
+        },
+        {
+            "gltfmodel":"#shark",
+            "scale":"0.1 0.1 0.1",
+            "position":"5 2 5",
+            "rotation":"0 -90 0"
         }
     ]
 }
