@@ -1,5 +1,6 @@
 # VirtualCity
-¿How can childs (3-6 years) learn using virtual reality?
+¿How could children (3-6 years) learn using virtual reality?
+[![TadanoHappy](https://cdn3.emoji.gg/emojis/2461_TadanoHappy.png)](https://emoji.gg/emoji/2461_TadanoHappy)
 
 Go to the demo app here
 https://teban18.github.io/VirtualCity-VritualReality-A-frame/
