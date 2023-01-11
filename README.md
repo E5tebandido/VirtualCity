@@ -1,4 +1,4 @@
-# VirtualCity-VritualReality-A-frame
+# VirtualCity
 ¿How can childs (3-6 years) learn using virtual reality?
 
 Go to the app here
